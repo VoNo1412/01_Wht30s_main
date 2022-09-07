@@ -1,0 +1,78 @@
+@import "../../utils/style/variables.scss";
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &-introduction {
+        width: 100%;
+    }
+
+    &-content {
+        position: absolute;
+        top: 28%;
+        left: 12px;
+        transform: translatex(25%);
+        color: $white;
+        text-align: left;
+        max-width: 644px;
+    }
+
+    &-title {
+        width: 562px;
+        height: 37px;
+        font-weight: 800 !important;
+        line-height: 37px !important;
+        margin-bottom: 59px;
+    }
+
+    &-desc {
+        line-height: 1.75;
+    }
+
+    // mobile
+    @media only screen and (max-width: 739px) {
+        img {
+            height: 300px;
+            width: initial;
+        }
+        
+        .primary-heading {
+            font-size: 25px;
+        }
+
+        .primary-desc {
+            font-size: 13px;
+        }
+
+        &-content {
+            left: 0;
+            transform: translate(10%);
+        }
+
+        &-introduction {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-title {
+            margin-bottom: 0;
+        }
+
+        &-desc {
+            max-width: 300px;
+        }
+    }
+
+    // // tablet
+    // @media only screen and (min-width: 740px) and (max-width: 1023px) {}
+
+    // // PC
+    // @media only screen and (min-width: 1024px) {
+    //     .container {
+    //         width: 100%;
+    //     }
+    // }
+}

@@ -1,0 +1,288 @@
+@import "../../utils/style/variables.scss";
+
+.study {
+    width: 100%;
+    height: 1687px;
+    padding: 0 0 57px;
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+    background-color: $white;
+    position: relative;
+    overflow: hidden;
+
+    &-main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 148px;
+        padding-bottom: 108px;
+        color: $black-two;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px 0;
+    }
+
+    &-list {
+        width: 100%;
+        height: 100%;
+
+        .study_item {
+            position: absolute;
+        }
+
+        .study_video01 {
+            width: 411px;
+            height: 204px;
+            bottom: 4%;
+            left: 330px;
+            z-index: 9;
+        }
+
+        .study_video02 {
+            width: 90px;
+            height: 83px;
+            bottom: 10%;
+            left: 53%;
+        }
+
+        .study_video03 {
+            width: 146px;
+            height: 146px;
+            left: 11%;
+            bottom: 14%;
+        }
+
+        .study_video04 {
+            width: 400px;
+            height: 513px;
+            z-index: 1;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+            top: 314px;
+            left: -10%;
+        }
+
+        .study_video05 {
+            width: 146px;
+            height: 114px;
+            top: -0.5%;
+            left: 10%;
+            
+        }
+
+        .study_video06 {
+            width: 130px;
+            height: 130px;
+            top: 18%;
+            right: 13.5%;
+            z-index: 6;
+        }
+
+        .study_video07 {
+            width: 158px;
+            height: 158px;
+            top: 11%;
+            right: 8%;
+        }
+
+        .study_video08 {
+            width: 395px;
+            height: 513px;
+            right: 0;
+            bottom: 11%;
+        }
+
+        .study_video09 {
+            width: 300px;
+            height: 377px;
+            right: -7.5%;
+            bottom: 35%;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .study_video {
+            width: 1251px;
+            height: 823px;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-title {
+        width: 100%;
+        height: 34px;
+        line-height: 40px !important;
+        text-transform: uppercase;
+        color: inherit;
+    }
+
+    &-desc {
+        width: 675px;
+        height: 52px;
+        margin: 25px 79px 28px 55px;
+        text-align: center;
+        color: inherit;
+
+    }
+
+    @media  screen and (max-width: 1023px) {
+        height: auto;
+
+        margin-top: 30px;
+
+        img {
+            display: none;
+        }
+
+        &_button {
+            margin-top: 10px;
+            left: 0;
+            transform: translate(0);
+        }
+
+        
+        &-content {
+            
+            padding: 0 10px;
+        }
+
+        &-desc {
+            width: 100%;
+            text-align: center;
+            height: fit-content;
+            margin-bottom: 30px;
+        }
+
+        .primary-heading {
+            font-size: 30px;
+        }
+
+        .primary-desc {
+            font-size: 14px;
+        }
+
+        &-desc {
+            margin: 0;
+        }
+
+
+        .button {
+            padding: 10px 27px;
+            font-size: 16px;
+        }
+    }
+
+
+    @media screen and (min-width: 1024px) and (max-width: 1789px) {
+        height: 1500px;
+
+        &-list {
+            .study_video01 {
+                width: 320px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+
+            .study_video02 {
+                width: 78px;
+                height: 76px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+
+            .study_video03 {
+                width: 120px;
+                height: 120px;
+                left: 8%;
+                bottom: 12%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+
+            .study_video04 {
+                width: 300px;
+                height: 380px;
+                left: -3%;
+            }
+
+            .study_video06 {
+                width: 100px;
+                height: 100px;
+                right: 16%;
+            }
+
+            .study_video08 {
+                width: 350px;
+                height: 300px;
+                right: -6%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+
+            .study_video09 {
+                height: 340px;
+                right: -10%;
+                bottom: 24%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+
+            .study_video {
+                width: 1100px;
+                height: 800px;
+                z-index: 999;
+                top: 30%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+        }
+
+    }
+
+}

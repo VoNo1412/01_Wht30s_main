@@ -1,0 +1,13 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="161px" height="199px">
+<path fill-rule="evenodd"  stroke-width="3px" stroke="rgb(17, 17, 17)" fill="rgb(255, 255, 255)"
+ d="M6.500,27.499 L154.500,27.499 L154.500,192.499 L6.500,192.499 L6.500,27.499 Z"/>
+<text font-family="Montserrat" fill="rgb(34, 34, 34)" font-weight="bold" font-size="20px" x="27.5px" y="125.5px"> <tspan dy="-54px">JIN&#8217;S</tspan><tspan x="27.5px" dy="1.35em">WEEKLY</tspan><tspan x="27.5px" dy="1.35em">PLAN</tspan>
+</text>
+<path fill-rule="evenodd"  fill="rgb(252, 211, 42)"
+ d="M26.500,173.499 L26.500,170.499 L133.499,170.499 L133.499,173.499 L26.500,173.499 ZM26.500,160.499 L133.499,160.499 L133.499,163.499 L26.500,163.499 L26.500,160.499 ZM26.500,150.499 L133.499,150.499 L133.499,153.499 L26.500,153.499 L26.500,150.499 ZM26.500,140.499 L133.499,140.499 L133.499,143.499 L26.500,143.499 L26.500,140.499 Z"/>
+<path fill-rule="evenodd"  stroke-width="3px" stroke="rgb(17, 17, 17)" fill="rgb(17, 17, 17)"
+ d="M106.499,6.499 L130.500,6.499 L130.500,50.499 L106.499,50.499 L106.499,6.499 Z"/>
+</svg>

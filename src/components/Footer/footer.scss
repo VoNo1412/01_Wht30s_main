@@ -1,0 +1,106 @@
+@import "../../utils/style/variables.scss";
+
+.footer {
+    width: 100%;
+    height: 464px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    padding: 49px 99px 113px;
+
+    &-main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    &-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &-brand {
+        width: 120px;
+        height: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 15px;
+        color: $black-two;
+    }
+
+    &-desc {
+        margin-top: 30px;
+        width: 265px;
+        height: 135px;
+        font-family: $family-eng;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2.14;
+        text-align: left;
+        color: $black-two;
+    }
+
+    &-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: $black-two;
+    }
+
+    &-text {
+        margin-top: 30px;
+    }
+
+    &-item {
+        .footer-info {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 0 30px;
+
+            .footer-info_item {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    &-copy {
+        font-size: 14px;
+        font-weight: 300;
+        color: $greyish;
+        line-height: 1.71;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-icon {
+        display: flex;
+        gap: 0 20px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        height: 400px;
+
+        &-main {
+            justify-content: start;
+        }
+
+        &-item:nth-child(2) {
+            display: none;
+        }
+
+        &-copy {
+            gap: 30px 0;
+            flex-direction: column-reverse;
+        }
+
+
+        padding: 0 20px;
+    }
+
+}

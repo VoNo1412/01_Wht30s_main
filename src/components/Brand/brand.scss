@@ -1,0 +1,333 @@
+@import "../../utils/style/variables.scss";
+
+.brand {
+    width: 100%;
+    height: 956px;
+    mix-blend-mode: multiply;
+    background-color: $cerulean;
+    margin: 87px 0 0 0;
+    overflow: hidden;
+
+    &-main {
+        position: relative;
+        height: 100%;
+    }
+
+    &-list {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-content {
+        width: 100%;
+        height: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 149px;
+    }
+
+    &-title {
+        width: 100%;
+        height: 34px;
+        color: $sun-yellow;
+        margin-bottom: 40px;
+    }
+
+    &-desc {
+        width: 710px;
+        height: 45px;
+        font-family: $family-eng;
+        line-height: 1.8 !important;
+        color: $sun-yellow;
+        text-align: justify;
+        margin-bottom: 77px;
+    }
+
+    &_object01 {
+        width: 183px;
+        height: 208px;
+        object-fit: contain;
+        position: absolute;
+        top: 17%;
+        left: 8.5%;
+    }
+
+    &_object02 {
+        width: 147px;
+        height: 134px;
+        position: absolute;
+        top: 3.4%;
+        right: 12%;
+    }
+
+    &_object03 {
+        width: 148px;
+        height: 186px;
+        position: absolute;
+        top: 5.2%;
+        right: 8%;
+    }
+
+    &_object04 {
+        width: 197px;
+        height: 457px;
+        position: absolute;
+        top: 29%;
+        right: -2.5%;
+    }
+
+    &_object05 {
+        width: 350px;
+        height: 233px;
+        position: absolute;
+        top: 57%;
+        right: -1.0%;
+    }
+
+    &_object06 {
+        width: 192px;
+        height: 338px;
+        position: absolute;
+        top: 42.2%;
+        left: 0;
+    }
+
+    &_object07 {
+        width: 180px;
+        height: 255px;
+        position: absolute;
+        top: 51%;
+        left: 10%;
+    }
+
+    &_window {
+        width: 1253px;
+        height: 441px;
+        object-fit: contain;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+
+    &-board {
+        position: absolute;
+        top: 43%;
+        right: 20%;
+        z-index: 1000;
+    }
+
+    &-heading {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 2.4;
+        color: $black-three;
+        width: 467px;
+        height: 20px;
+    }
+
+    &-text {
+        margin: 40px 0;
+        width: 528px;
+        height: 135px;
+        color: $black-three;
+    }
+
+
+    
+
+    @media screen and (min-width: 1024px) and (max-width: 1789px) {
+
+        height: 800px;
+
+        &-board {
+            right: 18%;
+        }
+
+        &-heading {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &-text {
+            font-size: 13px !important;
+            width: 380px;
+            margin: 10px 0 0;
+            margin: 0 auto;
+        }
+
+        &_window {
+            width: 900px;
+            height: 300px;
+            top: 41%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        &_object01 {
+            width: 140px;
+            height: 150px;
+            left: 10.5%;
+        }
+
+
+        &_object03 {
+            top: 10.2%;
+            right: 6%;
+        }
+
+        &_object04 {
+            width: 300px;
+            height: 306px;
+            top: 28%;
+            right: -6%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        &_object05 {
+            width: 300px;
+            height: 206px;
+            top: 53%;
+            right: 2%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        &_object06 {
+            width: 172px;
+            height: 280px;
+            left: -1%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        &_object07 {
+            width: 149px;
+            height: 206px;
+            left: 11%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        height: 800px;
+        margin-top: 0;
+
+        &-content {
+            padding-top: 120px;
+        }
+
+        &-board {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            right: 0;
+
+        }
+
+        &-heading {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        &-desc {
+            width: 360px;
+            max-width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            height: fit-content;
+        }
+
+        &-text {
+            margin: 30px 0;
+            width: 70%;
+            height: inherit;
+            margin: 30px auto;
+        }
+
+
+
+        &_object01,
+        &_object02,
+        &_object03,
+        &_object04,
+        &_object05,
+        &_object06,
+        &_object07,
+        &_window {
+            display: none;
+        }
+
+        &_window {
+            width: 500px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_button {
+            margin-top: 10px;
+            left: 0;
+            transform: translate(0);
+        }
+
+        .button {
+            padding: 10px 27px;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+
+        .third-heading {
+            font-size: 30px;
+        }
+
+        .third-desc {
+            font-size: 14px;
+        }
+    }
+
+
+    
+    @media screen and (max-width: 759px) {
+        &-board {
+            right: 0;
+            left: 0;
+        }
+
+        &-text {
+            width: 300px;
+            margin: 30px auto;
+        }
+    }
+}

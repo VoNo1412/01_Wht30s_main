@@ -1,0 +1,25 @@
+const productImg = {
+    bestBg: require("./bes-bg.png"),
+    bestBg_2x: require("./bes-bg@2x.png"),
+    bestBg_3x: require("./bes-bg@3x.png"),
+    bestImg01: require("./best-image-01.png"),
+    bestImg01_2x: require("./best-image-01@2x.png"),
+    bestImg01_3x: require("./best-image-01@3x.png"),
+    bestImg02: require("./best-image-02.png"),
+    bestImg02_2x: require("./best-image-02@2x.png"),
+    bestImg02_3x: require("./best-image-02@3x.png"),
+    bestImg03: require("./best-image-03.png"),
+    bestImg03_2x: require("./best-image-03@2x.png"),
+    bestImg03_3x: require("./best-image-03@3x.png"),
+    mark01: require("./producticon-01.png"),
+    mark01_2x: require("./producticon-01@2x.png"),
+    mark01_3x: require("./producticon-01@3x.png"),
+    mark02: require("./producticon-02.png"),
+    mark02_2x: require("./producticon-02@2x.png"),
+    mark02_3x: require("./producticon-02@3x.png"),
+    mark03: require("./producticon-03.png"),
+    mark03_2x: require("./producticon-03@2x.png"),
+    mark03_3x: require("./producticon-03@3x.png"),
+}
+
+export default productImg

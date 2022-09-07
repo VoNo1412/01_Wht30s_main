@@ -1,0 +1,233 @@
+@import "../../utils/style/variables.scss";
+
+.issue {
+    width: 100%;
+    height: 1143px;
+    padding: 43px 0 57px;
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+    background-color: $goldenrod;
+    position: relative;
+    overflow: hidden;
+
+    &-content {
+        width: 100%;
+        height: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 116px;
+        padding-bottom: 108px;
+        color: $dark-brown;
+    }
+
+    &-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-title {
+        width: 100%;
+        height: 34px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        color: inherit;
+    }
+
+    &-desc {
+        width: 710px;
+        height: 45px;
+        line-height: 1.8 !important; 
+        text-align: justify;
+        margin-bottom: 77px;
+        color: inherit;
+
+    }
+
+    &-btn {
+        position: relative;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+    }
+
+    &_object02 {
+        width: 119px;
+        height: 111px;
+        position: absolute;
+        top: 15%;
+        right: 68px;
+    }
+
+    &_object03 {
+        width: 95px;
+        height: 95px;
+        position: absolute;
+        top: 4%;
+        right: 70px;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &-item {
+        width: 387px;
+        height: 480px;
+        color: white;
+        background: black;
+        position: relative;
+
+
+        &_title {
+            width: 100%;
+            height: 45px;
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        &_object03,
+        &_object05,
+        &_object04 {
+            width: 383.5px;
+            height: 405px;
+            position: absolute;
+            bottom: 0;
+        }
+
+
+    }
+
+    &-card {
+        border: solid 3px $black-two;
+        padding: 87px 101px 85px 97px;
+        background-color: $bright-orange-two;
+    }
+
+
+    &-heading {
+        width: 189px;
+        height: 97px;
+        margin: 0 0 63px;
+        font-size: 55px;
+        font-weight: 800;
+        line-height: 1.04;
+        text-align: center;
+        color: $dark-brown;
+    }
+
+    &-arrow {
+        width: 148px;
+        height: 148px;
+    }
+
+    &-hot {
+        width: 167px;
+        height: 169px;
+        position: absolute;
+        top: calc(-96px/2);
+        left: 0;
+        z-index: 99;
+    }
+
+    &-circle {
+        width: 167px;
+        height: 169px;
+        position: absolute;
+        bottom: calc(-169px/2);
+        right: -20px;
+        z-index: 99;
+    }
+
+    @media screen and (max-width: 1023px) {
+        &_object02,
+        &_object03 {
+            display: none;
+        }
+
+        &-content {
+            padding: 0 10px;
+        }
+
+        &-desc {
+            width: 100%;
+            text-align: center;
+            height: fit-content;
+            margin-bottom: 30px;
+        }
+
+        &_button {
+            margin-top: 10px;
+            left: 0;
+            transform: translate(0);
+        }
+
+        .button {
+            padding: 10px 27px;
+            font-size: 16px;
+        }
+
+        .third-heading {
+            font-size: 30px;
+        }
+
+        .third-desc {
+            font-size: 14px;
+        }
+
+        &-list {
+           flex-direction: column;
+        }
+
+        &-card {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1789px) {
+        &-item {
+            width: 320px;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        &-item_object03,
+        &-item_object04,
+        &-item_object05 {
+            width: 320px;
+            height: 410px;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        &-hot, 
+        &-circle {
+            display: none;
+        }
+
+        &-item:nth-child(3) 
+        {
+            display: none;
+        }
+     }
+}

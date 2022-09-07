@@ -1,0 +1,127 @@
+@import "../../utils/style/variables.scss";
+
+.header {
+    width: 100%;
+    background: $black-two;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 34px 120px 35px 97px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 226px;
+    height: 26px;
+    margin: 3px 687px 0 0;
+    object-fit: contain;
+    background-color: $black-two;
+    cursor: pointer;
+}
+
+.pages {
+    font-family: $family-korea;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2.14;
+    text-align: center;
+    color: $white;
+    padding: 29px 0 28px;
+
+    a {
+        margin: 0 30px;
+        color: inherit;
+
+        &:nth-child(3) {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: white;
+                height: 28px;
+                width: 1px;
+                top: -5px;
+                right: -32px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .header {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+        margin: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        cursor: pointer;
+        display: block;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        margin-top: 38px;
+        position: absolute;
+        background-color: $black-two;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 0;
+        font-size: 10px;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all .3s ease-in-out;
+        z-index: 999;
+
+        a:nth-child(3)::after {
+            display: none;
+        }
+    }
+
+    .menu-active {
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+
+// tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .logo {
+        width: 150px;
+    }
+
+}
+
+// PC
+@media only screen and (min-width: 1024px) and (max-width: 1820px) {
+    .header {
+        padding: 0;
+    }
+
+    .logo {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+}

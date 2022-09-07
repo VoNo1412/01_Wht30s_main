@@ -1,0 +1,119 @@
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: $family-korea;
+
+}
+
+img {
+    display: block;
+    object-fit: contain;
+}
+
+.container {
+    width: 1920px;
+    max-width: 100%;
+    background-color: var(--black-two);
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-fonts {
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.primary-heading {
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.secondary-heading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.94;
+    color: $black-three;
+}
+
+.third-heading {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 4.5px;
+}
+
+.primary-desc {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.secondary-desc {
+    font-size: 16px;
+    line-height: 2.19;
+    font-weight: normal;
+}
+
+.third-desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.button {
+    width: max-content;
+    padding: 15px 37px;
+    border: solid 3px $dark-maroon;
+    background-color: $white;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.06;
+    text-align: left;
+    color: $black-three;
+    cursor: pointer;
+}
+
+
+// mobile
+@media only screen and (max-width: 739px) {
+    .container {
+        width: 100%;
+    }
+}
+
+// tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    
+    
+}
+
+// PC
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .button {
+        padding: 10px 27px;
+        font-size: 16px;
+    }
+    
+}

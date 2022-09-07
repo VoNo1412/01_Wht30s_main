@@ -1,0 +1,99 @@
+@import "../../utils/style/variables.scss";
+
+
+.detailproduct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 46px 10px;
+    flex-wrap: wrap;
+    padding: 142px 174px;
+    padding-bottom: 56px;
+
+    &_title {
+        margin: 25px 0 20px 0;
+    }
+
+    &_sub,
+    &_heart {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+    }
+
+    &_price {
+        color: $black-three;
+    }
+
+    &_sub {
+        justify-content: space-between;
+    }
+
+    &_button {
+        margin-top: 49px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+   
+
+    @media screen and (min-width: 1024px) and (max-width: 1789px) {
+        padding: 0 40px;
+
+        .photo {
+            width: 250px;
+            height: 250px;
+        }
+
+        .secondary-heading {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 50px 0;
+        gap: 14px 0;
+        flex-direction: column;
+
+        &_button {
+            margin-top: 10px;
+            left: 0;
+            transform: translate(0);
+        }
+
+        .button {
+            padding: 10px 27px;
+            font-size: 16px;
+        }
+
+        .photo {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width: 759px) {
+        .photo {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 1px;
+    background-color: $mango;
+}
+
+.hearticon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.heart {
+    color: $brownish-grey;
+}
