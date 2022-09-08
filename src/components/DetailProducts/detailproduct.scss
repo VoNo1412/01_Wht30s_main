@@ -8,10 +8,27 @@
     gap: 46px 10px;
     flex-wrap: wrap;
     padding: 142px 174px;
+    flex-direction: column
+    ;
     padding-bottom: 56px;
 
     &_title {
         margin: 25px 0 20px 0;
+    }
+
+    &_list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 30px 0;
+    }
+
+    &_item {
+        width: 300px;
     }
 
     &_sub,
@@ -31,14 +48,19 @@
 
     &_button {
         margin-top: 49px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
-   
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        margin-top: 0;
+        padding: 0 104px;
 
-    @media screen and (min-width: 1024px) and (max-width: 1789px) {
+        &_list {
+            justify-content: space-between;
+        }
+    }
+
+
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
         padding: 0 40px;
 
         .photo {
@@ -51,15 +73,15 @@
         }
     }
 
+
+
     @media screen and (max-width: 1023px) {
         padding: 50px 0;
         gap: 14px 0;
-        flex-direction: column;
 
         &_button {
             margin-top: 10px;
-            left: 0;
-            transform: translate(0);
+            
         }
 
         .button {
@@ -70,6 +92,26 @@
         .photo {
             width: 500px;
             height: 500px;
+        }
+    }
+
+    @media screen and (min-width: 760px) and (max-width: 1023px) {
+        flex-direction: column;
+
+        &_list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: row;
+            gap: 30px 0;
+        }
+
+        .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
     }
 

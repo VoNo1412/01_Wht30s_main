@@ -27,7 +27,9 @@ const DetailProducts = () => {
 
   return (
     <div className="detailproduct">
-      {listImages}
+      <div className="detailproduct_list">
+        {listImages}
+      </div>
       <div className="button detailproduct_button">SEE MORE</div>
     </div>
   )

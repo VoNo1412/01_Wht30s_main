@@ -65,11 +65,13 @@
             width: 400px;
             height: 513px;
             z-index: 1;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: fill;
             }
+
             top: 314px;
             left: -10%;
         }
@@ -79,7 +81,7 @@
             height: 114px;
             top: -0.5%;
             left: 10%;
-            
+
         }
 
         .study_video06 {
@@ -144,60 +146,67 @@
 
     }
 
-    @media  screen and (max-width: 1023px) {
-        height: auto;
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        height: 1300px;
 
-        margin-top: 30px;
+        &-list {
 
-        img {
-            display: none;
-        }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+            }
 
-        &_button {
-            margin-top: 10px;
-            left: 0;
-            transform: translate(0);
-        }
+            .study_video {
+                top: 35%;
+                width: 1000px;
+                height: 700px;
+            }
 
-        
-        &-content {
-            
-            padding: 0 10px;
-        }
+            .study_video04 {
+                height: auto;
+            }
 
-        &-desc {
-            width: 100%;
-            text-align: center;
-            height: fit-content;
-            margin-bottom: 30px;
-        }
+            .study_video01 {
+                width: 300px;
+                bottom: -3%;
+            }
 
-        .primary-heading {
-            font-size: 30px;
-        }
+            .study_video02 {
+                width: 70px;
+                height: 60px;
+                bottom: 0;
+            }
 
-        .primary-desc {
-            font-size: 14px;
-        }
+            .study_video03 {
+                left: 10%;
+                bottom: 4%;
+            }
 
-        &-desc {
-            margin: 0;
-        }
+            .study_video08 {
+                width: 330px;
+                height: 400px;
+                bottom: 0;
+            }
 
-
-        .button {
-            padding: 10px 27px;
-            font-size: 16px;
+            .study_video09 {
+                width: 280px;
+                height: 300px;
+                bottom: 22%;
+                right: -9%;
+            }
         }
     }
 
 
-    @media screen and (min-width: 1024px) and (max-width: 1789px) {
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
         height: 1500px;
 
         &-list {
             .study_video01 {
                 width: 320px;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -248,6 +257,7 @@
                 width: 350px;
                 height: 300px;
                 right: -6%;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -260,6 +270,7 @@
                 height: 340px;
                 right: -10%;
                 bottom: 24%;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -285,4 +296,135 @@
 
     }
 
+    @media screen and (max-width: 1023px) {
+        height: auto;
+
+        margin-top: 30px;
+
+        img {
+            display: none;
+        }
+
+        &_button {
+            margin-top: 10px;
+            left: 0;
+            transform: translate(0);
+        }
+
+
+        &-content {
+
+            padding: 0 10px;
+        }
+
+        &-desc {
+            width: 100%;
+            text-align: center;
+            height: fit-content;
+            margin-bottom: 30px;
+        }
+
+        .primary-heading {
+            font-size: 30px;
+        }
+
+        .primary-desc {
+            font-size: 14px;
+        }
+
+        &-desc {
+            margin: 0;
+        }
+
+
+        .button {
+            padding: 10px 27px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 760px) and (max-width: 1023px) {
+        height: 900px;
+        padding-top: 40px;
+
+        &_video03 {
+            display: none;
+        }
+
+        img {
+            display: block;
+        }
+
+        &-desc {
+            max-width: 400px;
+        }
+
+        &-list {
+
+            .study_video {
+                top: 16%;
+                width: 600px;
+                height: 600px;
+            }
+
+            .study_video01 {
+                top: 40%;
+                left: 20%;
+                width: 250px;
+                height: 250px;
+            }
+
+            .study_video02 {
+                top: 46%;
+                left: 60%;
+                width: 60px;
+                height: 60px;
+            }
+
+            .study_video05 {
+                top: 0;
+                left: 0;
+            }
+
+            .study_video07 {
+                top: 0;
+                right: 4%;;
+                width: 120px;
+                height: 120px;
+            }
+            
+            .study_video06 {
+                width: 80px;
+                height: 80px;
+                top: 5%;
+            }
+
+            .study_video04 {
+                top: 36%;
+                left: -10%;
+                width: 200px;
+                height: 260px;
+            }
+
+            .study_video08 {
+                width: 350px;
+                height: 350px;
+                top: 50%;
+                right: -20%;
+            }
+
+            .study_video09 {
+                width: 200px;
+                height: 200px;
+                top: 36%;
+                right: -12%;
+            }
+
+            img {
+                width: 100%;
+            height: 100%;
+            }
+        }
+
+    }
 }
